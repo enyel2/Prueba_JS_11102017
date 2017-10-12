@@ -1,0 +1,3 @@
+$('#modal_company_<%= @company.id  %>').modal('hide')
+$("#post_<%= @company.id  %>").empty();
+$("tbody").prepend("<%= j render 'inname', company: @company%>");
